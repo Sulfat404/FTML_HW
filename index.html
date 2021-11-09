@@ -53,7 +53,7 @@
                         </ul>
                     </div>
                     <div class="main-about-end">
-                        <p class="main-about-end-text">Клуб будет полезен студентам, которые хотят чего-то большего. Если ты готов развивать свои hard skills в клиентской стороне пользовательского интерфейса, то<br>тебе к нам</p>
+                        <p class="main-about-end-text">Клуб будет полезен студентам, которые хотят чего-то большего. Если ты готов развивать свои hard skills в клиентской стороне пользовательского интерфейса, то тебе к нам</p>
                     </div>    
                 </main>
             </div>
@@ -77,55 +77,68 @@
     <div class="container leaders">
         <h2 class="leader-title">Руководители</h2>
         <div id="carousel" class="carousel">
+            <img class="arrow prev" src="./images/Arrow_left.png" alt="Arrow_left">
             <div class="gallery">
-                <ul>
+                <ul class="gallery-items">
                     <li class="gallery-item">
                         <img src="./images/foto1.png" alt="foto1">
-                        <p class="leader-name">Сулейманов Руслан</p>
+                        <p class="gallery-item-name">Сулейманов Руслан</p>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/foto2.png" alt="photo2">
-                        <p class="leader-name">Береснев Андрей</p>
+                        <p class="gallery-item-name">Береснев Андрей</p>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/foto3.png" alt="photo3">
-                        <p class="leader-name">Прохоров Николай</p>
+                        <p class="gallery-item-name">Прохоров Николай</p>
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/foto1.png" alt="foto1">
+                        <p class="gallery-item-name">Сулейманов Руслан</p>
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/foto2.png" alt="photo2">
+                        <p class="gallery-item-name">Береснев Андрей</p>
                     </li>
                     <li class="gallery-item">
                         <img src="./images/foto3.png" alt="photo3">
-                        <p class="leader-name">Прохоров Николай</p>
+                        <p class="gallery-item-name">Прохоров Николай</p>
                     </li>
                 </ul>
-            </div>     
+            </div>
+            <img class="arrow next" src="./images/Arrow_right.png" alt="Arrow_right">     
         </div>
-        <button class="arrow prev"><img class="Arrow_left" src="./images/Arrow_left.png" alt="Arrow_left"></button>
-
-        <button><img class="arrow next" src="./images/Arrow_right.png" alt="Arrow_right"></button>
     </div>
+
+    <!-- Participants -->
     <main class="participant container">
         <h2 class="participant-title">Участники</h2>
-        <div class="participant-galary">
-            <div class="leader-content">
+        <ul class="participant-galary">
+            <li class="leader-content">
                 <img src="./images/Participant.png" alt="Participant">
                 <p class="participant-name">Сулейманов Руслан</p>
-            </div>
-            <div class="leader-content">
+            </li>
+            <li class="leader-content">
+                <img src="./images/Participant.png" alt="Participant">
+                <p class="participant-name">Береснев Андрей</p>
+            </li>
+            <li class="leader-content">
+                <img src="./images/Participant.png" alt="Participant">
+                <p class="participant-name">Прохоров Николай</p>
+            </li>
+            <li class="leader-content">
                 <img src="./images/Participant.png" alt="Participant">
                 <p class="participant-name">Сулейманов Руслан</p>
-            </div>
-            <div class="leader-content">
+            </li>
+            <li class="leader-content">
                 <img src="./images/Participant.png" alt="Participant">
-                <p class="participant-name">Сулейманов Руслан</p>
-            </div>
-            <div class="leader-content">
+                <p class="participant-name">Береснев Андрей</p>
+            </li>
+            <li class="leader-content">
                 <img src="./images/Participant.png" alt="Participant">
-                <p class="participant-name">Сулейманов Руслан</p>
-            </div>
-            <div class="leader-content">
-                <img src="./images/Participant.png" alt="Participant">
-                <p class="participant-name">Сулейманов Руслан</p>
-            </div>
-        </div>
+                <p class="participant-name">Прохоров Николай</p>
+            </li>
+        </ul>
     </main>
     <footer class="footer container">
         <h2 class="footer-message">Будем рады видеть тебя в клубе</h2>
@@ -133,7 +146,7 @@
             <button class="btn-footer-join-vk">Вступить в группу, чтобы быть в курсе всех событий</button>
         </form>
     </footer>
-    </div>
+    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
