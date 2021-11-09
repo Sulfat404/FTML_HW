@@ -32,14 +32,15 @@
                             </a>
                         </ul>
                     </nav>
-                    </ul>
                 </header>
                 <main class="container main">
                     <div class="main-grid">
                         <div class="main-welcome">            
                             <h1 class="main-welcome-name">Клуб фронтенд<br>разработки FTML</h1>
                             <p class="main-welcome-sentence">Хочешь заниматься фронтендом или уже что-то умеешь?<br>Вступай в наш клуб и найти единомышленников</p>
-                            <button class="btn-main-join_club">Вступить</button>
+                            <form action="https://vk.com/ftmlclub" target="_blank">
+                                <button class="btn-main-join_club">Вступить</button>
+                            </form>
                         </div>
                         <img class="img-computer" src="images/Computer-with-clouds.png" alt="computer">
                     </div>
@@ -52,7 +53,7 @@
                         </ul>
                     </div>
                     <div class="main-about-end">
-                        <p class="main-about-end-text">Клуб будет полезен студентам, которые хотят чего-то большего. Если ты готов<br>развивать свои hard skills в клиентской стороне пользовательского интерфейса, то<br>тебе к нам</p>
+                        <p class="main-about-end-text">Клуб будет полезен студентам, которые хотят чего-то большего. Если ты готов развивать свои hard skills в клиентской стороне пользовательского интерфейса, то<br>тебе к нам</p>
                     </div>    
                 </main>
             </div>
@@ -64,42 +65,43 @@
             <h2 class="events-title">Ближайшие мероприятия</h2>
             <p class="events-sentence">Не переживай, что ничего глобального пока не происходит — все хакатаны еще будут!</p>
             <p class="events-sentence">А чтобы уж точно ничего не пропустить, подписывайся на нашу группу во “Вконтакте”</p>
-            <button class="btn-events-join">Вступить</button>
+            <form action="https://vk.com/ftmlclub" target="_blank">
+                <button class="btn-events-join">Вступить</button>
+            </form>
+            
         </div>
         <img src="./images/Lamp.png" alt="Lamp" style="width: 195px; height: 257px;">
     </main>
-    <main class="container leaders">
+
+    <!-- Carousel -->
+    <div class="container leaders">
         <h2 class="leader-title">Руководители</h2>
-        <div class="leader-carousel">
-            <a href="#" class="leader-link">
-                <div class="leader-content">
-                    <img src="./images/foto1.png" alt="foto1">
-                    <p class="leader-name">Сулейманов Руслан</p>
-                </div>
-            </a><a href="#" class="leader-link">
-                <div class="leader-content">
-                    <img src="./images/foto2.png" alt="photo2">
-                    <p class="leader-name">Береснев Андрей</p>
-                </div>
-            </a><a href="#" class="leader-link">
-                <div class="leader-content">
-                    <img src="./images/foto3.png" alt="photo3">
-                    <p class="leader-name">Прохоров Николай</p>
-                </div>
-            </a>
-            </a><a href="#" class="leader-link">
-                <div class="leader-content">
-                    <img src="./images/foto3.png" alt="photo3">
-                    <p class="leader-name">Прохоров Николай</p>
-                </div>
-            </a>
+        <div id="carousel" class="carousel">
+            <div class="gallery">
+                <ul>
+                    <li class="gallery-item">
+                        <img src="./images/foto1.png" alt="foto1">
+                        <p class="leader-name">Сулейманов Руслан</p>
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/foto2.png" alt="photo2">
+                        <p class="leader-name">Береснев Андрей</p>
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/foto3.png" alt="photo3">
+                        <p class="leader-name">Прохоров Николай</p>
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/foto3.png" alt="photo3">
+                        <p class="leader-name">Прохоров Николай</p>
+                    </li>
+                </ul>
+            </div>     
         </div>
-        <div class="leader-elements">
-            <img src="./images/Arrow_left.png" alt="Arrow_left">
-            <img class="leader-elements-line" src="./images/Line.png" alt="Line">
-            <img src="./images/Arrow_right.png" alt="Arrow_right">
-        </div>
-    </main>
+        <button class="arrow prev"><img class="Arrow_left" src="./images/Arrow_left.png" alt="Arrow_left"></button>
+
+        <button><img class="arrow next" src="./images/Arrow_right.png" alt="Arrow_right"></button>
+    </div>
     <main class="participant container">
         <h2 class="participant-title">Участники</h2>
         <div class="participant-galary">
@@ -127,7 +129,9 @@
     </main>
     <footer class="footer container">
         <h2 class="footer-message">Будем рады видеть тебя в клубе</h2>
-        <button class="btn-footer-join-vk">Вступить в группу, чтобы быть в курсе всех событий</button>
+        <form action="https://vk.com/ftmlclub" target="_blank">
+            <button class="btn-footer-join-vk">Вступить в группу, чтобы быть в курсе всех событий</button>
+        </form>
     </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

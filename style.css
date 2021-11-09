@@ -19,7 +19,7 @@ body > .leaders {
 }
 
 .container {
-    margin: auto;
+    margin: 0px auto;
     width: 1200px;
     padding-right: 125px;
     padding-left: 125px;
@@ -212,18 +212,35 @@ h2.events-title {
     text-decoration: none;
 }
 
+.leader-link__hidden {
+    display: none;
+}
+
 h2.leader-title {
     padding-top: 53px;
     padding-bottom: 72px;
     font-weight: bold;
 }
 
-.leader-carousel {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 260px);
-    justify-content: center;
-    gap: 43px;
+.carousel {
+    position: relative;
+
 }
+.carousel img {
+    display: block;
+}
+.gallery {
+    overflow: hidden;
+}
+/* .gallery ul {
+    
+} */
+.gallery li {
+    padding-right: 43px;
+    display: inline-block;
+}
+
+
 .leader-name {
     padding-top: 13px;
     text-align: center;
@@ -305,4 +322,6 @@ h2.leader-title {
     margin-right: 29px;
 
 }
+
+
 
