@@ -2,6 +2,7 @@ let i = 1;
     for(let li of carousel.querySelectorAll('li')) {
       li.style.position = 'relative';
       i++;
+      console.log(i);
     }
 
     let width = 300; // ширина картинки

@@ -13,8 +13,8 @@
 <body>
     <div class="header-main-background">
         <div class="header-background-clouds">
-            <div class="header-background-small-clouds">
-                <header class="header header-grid container">
+            <header class=" container">
+                <div class="header-grid header-navbar flex-column flex-lg-row flex">
                     <img src="./images/Logo.svg" alt="Logo" style="width: 40px; height: 42px;">
                     <nav class="header-nav-list">
                         <ul class="header-list">
@@ -32,17 +32,19 @@
                             </a>
                         </ul>
                     </nav>
-                </header>
-                <main class="container main">
-                    <div class="main-grid">
-                        <div class="main-welcome">            
-                            <h1 class="main-welcome-name">Клуб фронтенд<br>разработки FTML</h1>
-                            <p class="main-welcome-sentence">Хочешь заниматься фронтендом или уже что-то умеешь?<br>Вступай в наш клуб и найти единомышленников</p>
-                            <form action="https://vk.com/ftmlclub" target="_blank">
-                                <button class="btn-main-join_club">Вступить</button>
-                            </form>
-                        </div>
-                        <img class="img-computer" src="images/Computer-with-clouds.png" alt="computer">
+                </div>
+            </header>
+            <main class="container main">
+                <div class="row d-flex">
+                    <div class="main-welcome col-sm-12 col-lg-6">            
+                        <h1 class="main-welcome-name">Клуб фронтенд<br>разработки FTML</h1>
+                        <p class="main-welcome-sentence">Хочешь заниматься фронтендом или уже что-то умеешь?<br>Вступай в наш клуб и найти единомышленников</p>
+                        <form action="https://vk.com/ftmlclub" target="_blank">
+                            <button class="btn-main-join_club">Вступить</button>
+                        </form>
+                    </div>
+                    <div class="img-computer col-sm-12 col-lg-6 mt-5 mt-lg-0">
+                        <img  src="images/Computer-with-clouds.png" alt="computer">
                     </div>
                     <div class="main-about">
                         <h2 class="main-for-what">Для кого создан клуб?</h2>
@@ -54,9 +56,9 @@
                     </div>
                     <div class="main-about-end">
                         <p class="main-about-end-text">Клуб будет полезен студентам, которые хотят чего-то большего. Если ты готов развивать свои hard skills в клиентской стороне пользовательского интерфейса, то тебе к нам</p>
-                    </div>    
-                </main>
-            </div>
+                    </div>
+                </div>    
+            </main>
         </div>
         </div>
     </div>
@@ -143,7 +145,10 @@
     <footer class="footer container">
         <h2 class="footer-message">Будем рады видеть тебя в клубе</h2>
         <form action="https://vk.com/ftmlclub" target="_blank">
-            <button class="btn-footer-join-vk">Вступить в группу, чтобы быть в курсе всех событий</button>
+            <button class="btn-footer-join-vk">
+                <img src="./images/iconVK.svg">
+                <span class="btn-footer-text d-none d-xl-inline-block">Вступить в группу, чтобы быть в курсе всех событий</span>
+            </button>
         </form>
     </footer>
     <script src="./main.js"></script>
