@@ -96,10 +96,16 @@ h1.main-welcome-name {
     font-weight: bold;
 }
 
+.main-welcome-sentences {
+    padding-bottom: 25px;
+}
+
+
 .main-welcome-sentence {
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 22px;
-    padding-bottom: 25px;
+
 }
 
 .btn-main-join_club {
@@ -366,9 +372,20 @@ h2.leader-title {
         font-size: 24px;
         padding: 20px;
     }
+}
+@media (max-width: 600px) {
     h1.main-welcome-name {
+        text-align: center;
         font-size: 38px;
         line-height: 48px;
+    }
+    .main-welcome-sentence {
+        text-align: center;
+    }
+    .btn-main-join_club {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 

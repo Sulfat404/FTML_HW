@@ -27,16 +27,16 @@
                     <nav>
                         <ul class="header-list d-flex flex-column flex-lg-row">
                             <li class="header-item">
-                                <a class="header-list-link" href="#">Главная</a> 
+                                <a class="header-list-link" href="#main">Главная</a> 
                             </li>
                             <li class="header-item">
-                                <a class="header-list-link" href="#">Мероприятия</a> 
+                                <a class="header-list-link" href="#events">Мероприятия</a> 
                             </li>
                             <li class="header-item">
-                                <a class="header-list-link" href="#">Руководители</a> 
+                                <a class="header-list-link" href="#leaders">Руководители</a> 
                             </li>
                             <li class="header-item">
-                                <a class="header-list-link" href="#">Участники</a> 
+                                <a class="header-list-link" href="#participants">Участники</a> 
                             </li>
                         </ul>
                     </nav>
@@ -46,13 +46,16 @@
             <main class="container main">
                 <div class="row d-flex">
                     <div class="main-welcome col-sm-12 col-lg-6">            
-                        <h1 class="main-welcome-name">Клуб фронтенд<br>разработки FTML</h1>
-                        <p class="main-welcome-sentence">Хочешь заниматься фронтендом или уже что-то умеешь?<br>Вступай в наш клуб и найти единомышленников</p>
+                        <h1 id="main" class="main-welcome-name">Клуб фронтенд<br>разработки FTML</h1>
+                        <div class="main-welcome-sentences">
+                            <p class="main-welcome-sentence">Хочешь заниматься фронтендом или уже что-то умеешь?</p>
+                            <p class="main-welcome-sentence">Вступай в наш клуб и найти единомышленников</p>
+                        </div>
                         <form action="https://vk.com/ftmlclub" target="_blank">
                             <button class="btn-main-join_club">Вступить</button>
                         </form>
                     </div>
-                    <div class="img-computer col-sm-12 col-lg-6 mt-5 mt-lg-0">
+                    <div class="img-computer col-sm-12 col-lg-6 mt-5 mb-5 mt-lg-0 mb-lg-0">
                         <img  src="images/Computer-with-clouds.png" alt="computer">
                     </div>
                     <div class="main-about">
@@ -73,7 +76,7 @@
     </div>
     <main class="container events">
         <div class="events-text">
-            <h2 class="events-title">Ближайшие мероприятия</h2>
+            <h2 id="events" class="events-title">Ближайшие мероприятия</h2>
             <p class="events-sentence">Не переживай, что ничего глобального пока не происходит — все хакатаны еще будут!</p>
             <p class="events-sentence">А чтобы уж точно ничего не пропустить, подписывайся на нашу группу во “Вконтакте”</p>
             <form action="https://vk.com/ftmlclub" target="_blank">
@@ -86,7 +89,7 @@
 
     <!-- Carousel -->
     <div class="container leaders">
-        <h2 class="leader-title">Руководители</h2>
+        <h2 id="leaders"class="leader-title">Руководители</h2>
         <div id="carousel" class="carousel">
             <img class="arrow prev" src="./images/Arrow_left.png" alt="Arrow_left">
             <div class="gallery">
@@ -147,7 +150,7 @@
 
     <!-- scroll-Participants -->
     <main class="scroll-participants container">
-        <h2 class="participant-title">Участники</h2>
+        <h2 id="participants" class="participant-title">Участники</h2>
         <div class="scroll-gallery">
             <ul>
                 <li>
