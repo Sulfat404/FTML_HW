@@ -266,26 +266,40 @@ h2.leader-title {
 
 /* end carousel */
 
-.participant {
+.scroll-participants {
     padding-top: 53px;
     padding-bottom: 97px;
-    font-weight: bold;
+    max-width: 900px;
+    min-width: auto;
 }
 
 .participant-title {
     font-weight: bold;
 }
 
-.participant-galary {
-    margin-top: 42px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 184px);
-    gap: 65px;
+.scroll-gallery {
+    overflow-x: scroll;
 }
-.participant-name {
+
+.scroll-gallery ul {
+    width: 2800px;
+    margin-top: 42px;
+    padding-left: 0;
+
+}
+
+.scroll-gallery li {
+    width: 184px;
+    height: 235px;
+    margin-right: 43px;
+    display: inline-block;
+}
+
+.scroll-content-name {
     padding-top: 13px;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .footer {
@@ -351,6 +365,10 @@ h2.leader-title {
         text-decoration: none;
         font-size: 24px;
         padding: 20px;
+    }
+    h1.main-welcome-name {
+        font-size: 38px;
+        line-height: 48px;
     }
 }
 
